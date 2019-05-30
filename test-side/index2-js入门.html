@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" conten="text/html";charset="utf-8">
+<title>My second test page</title>
+<link href="styles/style.css" rel="stylesheet" type="text/css"></style>
+<script src="scripts/main.js" async></script><!--外部JS-->
+<script>
+function A(){
+document.querySelector('h2').innerHTML="夏季上新";
+}
+function B(){
+document.getElementById("b").innerHTML="专注童鞋 专注品质";
+}
+function C(){
+document.getElementById("demo").innerHTML=Date()
+}
+function D(){
+alert('别戳我，我怕疼')
+}
+document.querySelector('html').onclik=function(){alert('别')}
+</script>
+<!--内部JS-->
+</head>
+
+<body align="center">
+<h1 id="aa0">问候</h1>
+<h1>小螺号</h1>
+<h2>精品特卖</h2>
+<p id="b">只为宝宝健康成长</p>
+
+<li id="i1">3</li>
+<li id="i2">5</li>
+
+<button type="button" onclick="A()" >试一试</button>
+<button type="button" onclick="B()" >试一试</button>
+<button type="button" onclick="C()">点击这里来显示日期和时间</button><!--内联JS-->
+<p id="demo"></p>
+<button type="button" onclick="D()">戳</button>
+A(4.7)
+
+<button type="button" onclick="AA()">13-20码</button>
+<a id="aa1"></a>
+</body>
+</html>
